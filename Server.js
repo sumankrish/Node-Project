@@ -78,6 +78,12 @@ app.get('/',(req,res)=>{
 });
 });
 
+app.get('/profile',(req,res)=>{
+  res.render('profile.hbs',{
+    Msg : 'Welcome to profile Page'
+  });
+});
+
 app.listen(port,()=>{
   console.log(`Server is up and running on ${port}`);
 });
